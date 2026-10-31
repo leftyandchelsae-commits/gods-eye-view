@@ -126,7 +126,10 @@ The highest-leverage places to jump in:
 - ES modules, **2-space indent, single quotes, semicolons.**
 - JSDoc on exported/public functions.
 - Match the surrounding code — comment density, naming, and idiom.
-- Prefer small, reviewable commits. Conventional-commit-style prefixes (`feat:`, `fix:`, `perf:`, `docs:`) are appreciated but not required.
+- Prefer small, reviewable commits. Use Conventional Commit prefixes for changes
+  intended for release: `feat:` for features, `fix:` for fixes, and `!` for
+  breaking changes. Release Please uses these messages to calculate versions
+  and generate release notes; unrecognized commit types may not trigger a release.
 
 ## Formatting and reusable components
 
